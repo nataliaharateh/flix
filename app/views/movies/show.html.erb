@@ -12,4 +12,7 @@
   <p><%= format_total_gross(@movie) %></p>
 </article>
 
+<nav>
 <%= link_to "All Movies", root_path %>
+<%= link_to "Edit", edit_movie_path(@movie) %>
+</nav>
