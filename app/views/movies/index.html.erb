@@ -5,7 +5,24 @@
     <!-- Original: link_to movie.title, movie_path(movie) -->
     <header><h2><%= link_to movie.title, movie %></h2></header>
     <p><%= truncate(movie.description, length: 40, separator: ' ') %></p>
+    <%= image_for(movie) %>
     <table>
+      <tr>
+        <th>
+          Cast:
+        </th>
+        <td>
+          <%= movie.cast %>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Duration:
+        </th>
+        <td>
+          <%= movie.duration %>
+        </td>
+      </tr>
       <tr>
         <th>
         Released:
@@ -35,5 +52,3 @@
   </article>
 <% end %>
 <br/>
-<%= link_to("Add New Movie", new_movie_path) %>
-<%= render 'footer' %>
