@@ -4,18 +4,7 @@ header#page-header {
   color: $secondary-color;
   background: $primary-color;
   padding: 5px;
-  border-bottom: 1px solid darken($primary-color, 10%)
-
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-  }
-}
-
-aside#page-sidebar {
-  float: right;
-  background: $secondary-color;
-  width: 200px;
+  border-bottom: 1px solid darken($primary-color, 10%);
 }
 
 footer#page-footer {
@@ -23,5 +12,5 @@ footer#page-footer {
   background: $secondary-color;
   text-align: center;
   padding: 5px;
-  border-top: 1px solid darken($secondary-color, 10%)
+  border-top: 1px solid darken($secondary-color, 10%);
 }
